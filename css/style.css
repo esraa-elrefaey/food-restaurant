@@ -1,0 +1,420 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+    scroll-behavior: smooth;
+}
+body{
+    min-height: 1000px;
+}
+p{
+    font-weight: 300;
+    color: #111;
+}
+.banner {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(../images/bg.jpg);
+    background-size: cover;
+}
+.banner .content {
+    max-width: 900px;
+    text-align: center;
+}
+.banner .content h2 {
+    font-size: 5em;
+    color: #fff;
+}
+.banner .content p {
+    font-size: 1em;
+    color: #fff;
+}
+.btn {
+    text-decoration: none;
+    color: #fff;
+    background: #59886b;
+    padding: 10px 30px;
+    margin-top: 20px;
+    font-size: 1em;
+    display: inline-block;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: 0.5s;
+}
+.btn:hover{
+    letter-spacing: 6px;
+}
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    padding: 40px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s;
+}
+header.sticky {
+    background: #fff;
+    padding: 10px 100px;
+}
+header .logo {
+    color: #fff;
+    font-weight: 700;
+    font-size: 2em;
+    text-decoration: none;
+}
+header.sticky .logo {
+    color: #111;
+}
+header .logo span {
+    color: #8db596;
+}
+header .navigation {
+    position: relative;
+    display: flex;
+}
+header .navigation li {
+    list-style: none;
+    margin-left: 30px;;
+}
+header .navigation li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 300;
+}
+header.sticky  .navigation li a {
+    color: #111;
+}
+header.sticky  .navigation li a:hover{
+    color: #8db596;
+}
+section {
+    padding: 100px;
+}
+.row {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.row  .containeer {
+    width: 48%;
+    position: relative;
+}
+.titleText {
+    font-weight: 300;
+    font-size: 2em;
+    color: #111;
+}
+.titleText span {
+    font-weight: 700;
+    font-size: 1.5em;
+    color:#59886b;
+}
+.row  .containeer p{
+    text-align: justify;
+}
+.row  .containeer .imgbox {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    min-height: 300px;
+}
+.row  .containeer .imgbox img {
+    position: absolute;
+    height: 100%;
+    width: 100%; 
+    top: 0;
+    left: 0;
+    object-fit: cover;
+}
+.title {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.menu .content {
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+.menu .content .box {
+    width: 340px;
+    margin:20px;
+    border: 15px solid #fff;
+    box-shadow: 0 5px 35px rgba(0, 0, 0, 0.08);
+}
+.menu .content .box .imgbox {
+    width: 100%;
+    height: 300px;
+    position: relative;
+}
+.menu .content .box .imgbox  img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.menu .content .box .text {
+    padding: 15px 0 5px;
+}
+.menu .content .box .text h3 {
+    font-weight: 400;
+    color: #111;
+}
+.expert .content {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+.expert .content .box{
+    width: 250px;
+    margin:15px;
+}
+.expert .content .box .imgbox{
+    width: 100%;
+    position: relative; 
+    height: 300px; 
+}
+.expert .content .box .imgbox img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.expert .content .box .text{
+    padding: 15px 0 5px;
+}
+.expert .content .box .text h3 {
+    color: #111;
+    font-weight: 400;
+}
+.testimonials {
+    background: url(../images/bg2.jpg);
+    background-size: cover;
+}
+.whitee h2 , .whitee p{
+    color: #fff;
+}
+.testimonials .content{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.testimonials .content .box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+    margin: 20px;
+    justify-content: center;
+    background: #fff;
+    width: 340px;
+}
+.testimonials .content .box .imgbox{
+    width: 80px;
+    height: 80px;
+    position: relative;
+    margin-bottom: 20px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.testimonials .content .box .imgbox img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.testimonials .content .box .text p{
+    font-style: italic;
+    color: #666;
+    text-align: justify;
+}
+.testimonials .content .box .text h3 {
+    margin-top: 20px;
+    color: #59886b;
+    font-weight: 600;
+    font: 2em ;
+    text-align: center;
+}
+.contact {
+    background: url(../images/bg3.jpg);
+    background-size: cover;
+}
+.contactForm {
+    padding: 75px 50px;
+    background: #fff;
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    margin-top: 50px;;
+}
+.contactForm h3 {
+    color: #111;
+    margin-bottom: 20px;
+    font-weight: 500;
+    font-size: 1.5em;
+}
+.contactForm .inputBox {
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px;
+}
+.contactForm .inputBox input ,.contactForm .inputBox textarea{
+    width: 100%;
+    outline: none;
+    border: 1px solid #555;
+    color: #111;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: 300;
+    resize: none;
+}
+.contactForm .inputBox input[type='submit'] {
+    border: none;
+    color: #fff;
+    background: #59886b;
+    cursor: pointer;
+    transition: 0.5s;
+    text-transform:uppercase ;
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: 500px;
+    max-width: 100px;
+    display: inline-block;
+    letter-spacing: 2px;
+}
+.footer {
+    text-align: center;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 8px 40px;
+}
+.footer p{
+    color: #333;
+}
+.footer p span{
+    color: #59886b;
+    font-weight:600;
+}
+
+                              /* responsive website */
+@media(max-width:991px) {
+    header,header.sticky {
+        padding: 20px 10px;
+    }
+    header .navigation {
+        display: none;
+    }
+    .menuToggle {
+        background: url(../images/menu.png);
+        width: 40px;
+        height: 40px;
+        position: relative;
+        background-repeat: no-repeat;
+        background-size: 40px;
+        background-position: center;
+        cursor: pointer;
+    }
+    .menuToggle.active {
+        background: url(../images/close.png);
+        background-repeat: no-repeat;
+        background-size: 25px;
+        background-position: center;
+    }
+    header.sticky .menuToggle{
+        filter: invert(1);
+
+    }
+    header .navigation.active {
+        width: 100%;
+        position: fixed;
+        height: calc(100% - 68px);
+        background: #fff;
+        top: 68px;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    header .navigation li {
+        margin-left: 0px;;
+    }
+    header .navigation li a {
+        text-decoration: none;
+        color: #111;
+        font-weight: 300;
+        font-size: 1.7em;
+    }
+    section {
+        padding: 20px;
+    }
+    .banner .content h2 {
+        font-size: 3em;
+        color: #fff;
+    }
+    .row {
+        flex-direction: column;
+    }
+    .row .containeer {
+        width: 100%;
+        position: relative;
+    }
+    .row .containeer .imgbox {
+        height: 300px;
+        margin-top: 20px;
+    }
+    .menu .content {
+        margin-top: 20px;
+    }
+    .menu .content .box {
+        margin: 10px;
+    }
+    .menu .content .box .imgbox {
+        height: 260px;
+    }
+    .title {
+        text-align: center;
+    }
+    .titleText {
+    font-size: 1.8em;
+    margin-bottom: 15px;
+    line-height: 1.5em;
+    }
+    .testimonials .content .box {
+        padding: 20px;
+        margin: 10px;
+    }
+    .contactForm {
+        padding: 35px 40px;
+        margin-bottom: 30px;
+        margin-top: 20px;
+    }
+
+}   
+@media (max-width: 480px){
+    .banner .content h2 {
+        font-size: 2.2em;
+        color: #fff;
+    }    
+}                          
